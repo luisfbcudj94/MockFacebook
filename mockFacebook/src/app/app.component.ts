@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { LogginService } from './loggin.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'mockFacebook';
+
+
+  constructor(private logginService:LogginService){
+
+  }
+
+  variable = this.logginService.readSigIn()
+
+
 }

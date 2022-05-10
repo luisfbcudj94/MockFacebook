@@ -1,0 +1,167 @@
+@font-face {
+    font-family: 'SFProDisplay-Regular';
+    src: url('../../assets/Recursos/Fonts/FontsFree-Net-SFProDisplay-Regular.ttf') format('truetype');
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #F0F2F5;
+}
+
+main section{
+
+    display: grid;
+    grid-template: auto/ 50% 50%;
+    margin: 120px 70px;
+    /*grid-column-gap: 50px;*/
+}
+
+main section .textoPrincipal{
+    display: flex;
+    flex-direction: column;
+    font-family: SFProDisplay-Regular;
+    font-size: 28px;
+    margin: 50px 0 0 21px;
+}
+
+main section .textoPrincipal img{
+    position: relative;
+    left: -30px;
+    width: 301px;
+    height: 106px;
+}
+
+main section .ingresoDatos {
+    display: grid;
+    grid-template: auto auto / auto;
+    justify-content: center;
+    justify-items: center;
+}
+
+main section .ingresoDatos form{
+    background-color: white;
+    display: grid;
+    grid-template: auto auto auto 50px 10px auto/ 90%;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.21);
+    margin: 21px 0 21px 0;
+    width: 90%;
+}
+
+main section .ingresoDatos form input{
+    height: 45px;
+    width: 100%;
+    margin-top: 15px;
+    border: 1px #DDDFE2 solid;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-family: SFProDisplay-Regular;
+    font-size: 17px;
+    background-color: white;
+}
+
+main section .ingresoDatos form button{
+    height: 40px;
+    width: 100%;
+    margin: 15px 0 15px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #1877F2;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+main section .ingresoDatos form #crear{
+    width: 50%;
+    background-color: #42B72A;
+    margin-bottom: 22px;
+}
+
+main section .ingresoDatos form a{
+    text-decoration: none;
+    color: #1877F2;
+    font-family: SFProDisplay-Regular;
+}
+
+main section .ingresoDatos form hr{
+    width: 100%;
+    height: 1px;
+    border: none;
+    background-color: #DADDE1;
+}
+
+main section .ingresoDatos .textoAuxiliar{
+    width: 80%;
+    font-family: SFProDisplay-Regular;
+    text-align:center;
+}
+
+main section .ingresoDatos form input::placeholder{
+    font-family: SFProDisplay-Regular;
+    font-size: 17px;
+    color: #90949C;
+}
+
+
+main section .ingresoDatos form input:focus{
+    outline: none;
+    border: 1px #1877F2 solid;
+    box-shadow: 0px 0px 2px 0.1px rgba(24,118,242,1);
+}
+
+main section .ingresoDatos form button:hover{
+    background-color: #1569d8;
+}
+
+main section .ingresoDatos form #crear:hover{
+    background-color: #399b26;
+}
+
+/* FOOTER */
+footer{
+    background-color: white;
+    height: auto;
+    padding: 25px 50px 10px 50px;
+}
+
+footer button{
+    width: 25px;
+    border: 1px #CCD0D5 solid;
+    background-color: #F5F6F7;
+    cursor: pointer;
+}
+
+footer hr{
+    margin: 10px;
+    width: 100%;
+    height: 1px;
+    border: none;
+    background-color: #DADDE1;
+}
+
+footer a,#copy{
+    font-family: SFProDisplay-Regular;
+    font-size: 13px;
+    text-decoration: none;
+    color: #737373;
+    margin: 13px;
+    background-color: white;
+}
+
+footer #copy{
+    font-size: 11px;
+}
+
+footer button:hover{
+    background-color: #eceaea;
+}
